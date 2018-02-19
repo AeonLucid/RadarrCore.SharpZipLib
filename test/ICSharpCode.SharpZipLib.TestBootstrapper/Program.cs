@@ -11,6 +11,8 @@ namespace ICSharpCode.SharpZipLib.TestBootstrapper
 		{
 			new AutoRun(typeof(ICSharpCode.SharpZipLib.Tests.Base.InflaterDeflaterTestSuite).GetTypeInfo().Assembly)
 			.Execute(args, new ExtendedTextWrapper(Console.Out), Console.In);
+
+			Console.ReadKey();
 		}
 
     }
